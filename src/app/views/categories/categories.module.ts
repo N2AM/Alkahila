@@ -2,9 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CategoriesRoutingModule } from './categories-routing.module';
+import { CategoriesComponent } from './categories/categories.component';
+import { CategoryComponent } from './category/category.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [CategoriesComponent, CategoryComponent],
   imports: [
     CommonModule,
     CategoriesRoutingModule

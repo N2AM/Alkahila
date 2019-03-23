@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="277.5" height="40.715" viewBox="0 0 277.5 40.715">
+    <defs>
+        <style>
+            .cls-1{fill:#fafafa}.cls-2{fill:#365495}.cls-3{clip-path:url(#clip-path)}.cls-4{fill:#fff;font-size:16px;font-family:CaviarDreams,Caviar Dreams}.cls-5{fill:none;stroke:#fafafa}
+        </style>
+        <clipPath id="clip-path">
+            <path id="Rectangle_101" d="M0 0h11v20.14H0z" class="cls-1" data-name="Rectangle 101"/>
+        </clipPath>
+    </defs>
+    <g id="Group_1927" data-name="Group 1927" transform="translate(-33 -585)">
+        <g id="Group_199" data-name="Group 199" transform="translate(33 585)">
+            <rect id="Rectangle_102" width="277.5" height="40.714" class="cls-2" data-name="Rectangle 102" rx="4"/>
+            <g id="Group_196" data-name="Group 196" transform="translate(40 12.36)">
+                <g id="Group_195" data-name="Group 195">
+                    <g id="Group_194" class="cls-3" data-name="Group 194">
+                        <path id="Path_135" d="M10.476 0H7.857a4.573 4.573 0 0 0-4.819 4.95v2.279H.419A.414.414 0 0 0 0 7.648v3.3a.414.414 0 0 0 .419.419h2.619v8.355a.414.414 0 0 0 .419.419h3.431a.414.414 0 0 0 .419-.419v-8.355h3.064a.414.414 0 0 0 .419-.419v-3.3a.451.451 0 0 0-.419-.419h-3.09V5.29c0-.943.21-1.414 1.44-1.414h1.755a.414.414 0 0 0 .419-.419V.419A.414.414 0 0 0 10.476 0zm0 0" class="cls-1" data-name="Path 135" transform="translate(0 -.026)"/>
+                    </g>
+                </g>
+            </g>
+            <text id="Login_with_Facebook" class="cls-4" data-name="Login with Facebook" transform="translate(82.791 26)">
+                <tspan x="0" y="0">Login with Facebook</tspan>
+            </text>
+            <path id="Line_29" d="M0 0v24" class="cls-5" data-name="Line 29" transform="translate(67.701 8.5)"/>
+        </g>
+    </g>
+</svg>

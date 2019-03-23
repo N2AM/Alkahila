@@ -1,3 +1,20 @@
-<p>
-  header works!
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <img src="../../../../assets/imgs/logo.svg" alt="Alkahila logo" />
+    </div>
+    <div class="col-md-6 d-flex">
+      <input
+        placeholder="What are you looking for ? ..."
+        class="form-control"
+      />
+      <img src="" alt="">
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</div>
+
+<p *ngFor="let category of (categories | async); trackBy: trackByFn">
+  <a [routerLink]="'/categories/' + category.id">{{ category.name }}</a>
 </p>
+<button class="btn" routerLink="/categories">All Catgories</button>
