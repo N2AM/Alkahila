@@ -11,10 +11,12 @@ import { AuthModule } from "./views/auth/auth.module";
 import { HomeComponent } from "./views/home/home.component";
 import { PageNotFoundComponent } from "./views/page-not-found/page-not-found.component";
 import { UserProfileModule } from "./views/user-profile/user-profile.module";
-import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { ServiceWorkerModule } from "@angular/service-worker";
+import { environment } from "src/environments/environment.serverless";
+import { MarginalsModule } from "./views/marginals/marginals.module";
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, PageNotFoundComponent, ResetPasswordComponent],
+  declarations: [AppComponent, HomeComponent, PageNotFoundComponent],
   imports: [
     CommonModule,
     NgtUniversalModule,
@@ -22,7 +24,11 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
     HttpClientModule,
     AuthModule,
     AppRoutingModule,
-    UserProfileModule
+    UserProfileModule,
+    ServiceWorkerModule.register("/ngsw-worker.js", {
+      enabled: environment.production
+    }),
+    MarginalsModule
   ],
   providers: []
 })

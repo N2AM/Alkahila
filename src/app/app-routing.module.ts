@@ -3,19 +3,20 @@ import { PageNotFoundComponent } from "./views/page-not-found/page-not-found.com
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { HomeComponent } from "./views/home/home.component";
-import { UnAuthGuard } from "src/app/shared/guards/unAuth.guard";
+import { UnAuthGuard } from "./shared/guards/unAuth.guard";
 
 const routes: Routes = [
   { path: "", component: HomeComponent, pathMatch: "full" },
   {
     path: "",
-    loadChildren: "./auth/auth.module.ts#AuthModule",
+    loadChildren: "./views/auth/auth.module.ts#AuthModule",
     pathMatch: "prefix",
     canActivate: [UnAuthGuard]
   },
   {
     path: "",
-    loadChildren: "./user-profile/user-profile.module.ts#UserProfileModule",
+    loadChildren:
+      "./views/user-profile/user-profile.module.ts#UserProfileModule",
     canActivate: [AuthGuard]
   },
   { path: "**", component: PageNotFoundComponent }
